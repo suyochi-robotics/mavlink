@@ -7992,6 +7992,13 @@
       <field type="uint8_t" name="count">Number of wheels reported.</field>
       <field type="double[16]" name="distance" units="m">Distance reported by individual wheel encoders. Forward rotations increase values, reverse rotations decrease them. Not all wheels will necessarily have wheel encoders; the mapping of encoders to wheel positions must be agreed/understood by the endpoints.</field>
     </message>
+    <message id="513" name="FLOW_SENSOR">
+      <description>Flow Sensor Mavlink Stream</description>
+      <field type="uint64_t" name="time_usec" units="us">Timestamp</field>
+      <field type="float" name="cal_factor" > Sensor constant to calculate flow rate </field>
+      <field type="float" name="flow_rate_lpm" units="l/m">flow rate_lpm</field>
+      <field type="uint32_t" name="pulse_count">float_array</field>
+   </message>
     <message id="9005" name="WINCH_STATUS">
       <description>Winch status.</description>
       <field type="uint64_t" name="time_usec" units="us">Timestamp (synced to UNIX time or since system boot).</field>
