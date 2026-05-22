@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<mavlink>
+    <!-- SUYOCHI message definitions           -->
+    <!-- https://github.com/suyochi-robotics   -->
+    <!-- email contacts: suyochi0623@gmail.com -->
+    <!-- mavlink ID range 43001 - 43099        -->
+    
+    <version>3</version>
+    <dialect>1</dialect>
+
+    <messages>
+
+        <message id="43001" name="FLOW_SENSOR">
+
+            <description>
+                Flow sensor telemetry stream
+            </description>
+
+            <field type="uint64_t" name="time_usec" units="us">
+                Timestamp in microseconds
+            </field>
+
+            <field type="float" name="cal_factor">
+                Sensor calibration factor
+            </field>
+
+            <field type="float" name="flow_rate_lpm" units="L/min">
+                Instantaneous flow rate in liters per minute
+            </field>
+
+            <field type="uint32_t" name="pulse_count">
+                Total accumulated pulse count
+            </field>
+
+        </message>
+
+    </messages>
+
+</mavlink>
