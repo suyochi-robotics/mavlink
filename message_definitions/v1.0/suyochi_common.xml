@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<mavlink>
+
+  <include>common.xml</include>
+  <include>suyochi.xml</include>
+
+  <version>3</version>
+  <dialect>1</dialect>
+  <messages>
+  </messages>
+
+</mavlink>
